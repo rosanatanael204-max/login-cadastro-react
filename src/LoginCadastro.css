@@ -1,0 +1,121 @@
+/* ======== Layout Base ======== */
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #eceff1, #f5f7fa);
+  font-family: "Inter", sans-serif;
+}
+
+/* ======== Card ======== */
+.card {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* ======== Textos ======== */
+.title {
+  font-size: 1.8rem;
+  color: #1a202c;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #4a5568;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+/* ======== Formulário ======== */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e0;
+  outline: none;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  border-color: #2b6cb0;
+  box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.2);
+}
+
+/* ======== Botão ======== */
+.button {
+  background-color: #2b6cb0;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #2c5282;
+  transform: translateY(-1px);
+}
+
+/* ======== Links e Mensagens ======== */
+.switch {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: #2b6cb0;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #1e4e8c;
+}
+
+.mensagem {
+  margin-top: 25px;
+  background-color: #ebf8ff;
+  border-left: 4px solid #3182ce;
+  padding: 12px;
+  border-radius: 8px;
+  color: #2b6cb0;
+  font-weight: 500;
+}
+
+/* ======== Responsividade ======== */
+@media (max-width: 450px) {
+  .card {
+    padding: 35px 25px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
